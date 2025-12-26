@@ -1,0 +1,33 @@
+:root{
+  /* Default colors (you can change via the color pickers) */
+  --primary-color: #EC4899; /* pink */
+  --secondary-color: #3B82F6; /* blue */
+  --primary-bg: rgba(236,72,153,0.08);
+  --secondary-bg: rgba(59,130,246,0.08);
+}
+
+/* Base font moved from inline to here */
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+/* Brand helpers: use these classes on elements that should follow the chosen colors */
+.brand-primary-border{ border-top-color: var(--primary-color) !important; }
+.brand-secondary-border{ border-top-color: var(--secondary-color) !important; }
+
+.brand-primary-text{ color: var(--primary-color) !important; }
+.brand-secondary-text{ color: var(--secondary-color) !important; }
+
+.brand-primary-bg{ background-color: var(--primary-bg) !important; }
+.brand-secondary-bg{ background-color: var(--secondary-bg) !important; }
+
+/* Small helper for the color picker controls */
+.color-controls{ display:flex; gap:0.5rem; align-items:center; justify-content:center; flex-wrap:wrap; }
+.color-controls label{ font-size:0.9rem; color: #374151; }
+.color-controls input[type="color"]{ width:2.2rem; height:2.2rem; padding:0; border-radius:4px; border:1px solid rgba(0,0,0,0.08); }
+.color-controls .control{ display:flex; gap:0.5rem; align-items:center; }
+
+/* Small responsive tweaks */
+@media (min-width:768px){
+  .color-controls{ justify-content:flex-end; }
+}

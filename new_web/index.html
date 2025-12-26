@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42ler.com - Ana Sayfa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Site styles moved to style.css (contains --primary-color / --secondary-color) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 1. Header (Ana Logo Banner) -->
+    <header class="py-12 bg-white shadow-sm">
+        <div class="container mx-auto px-4 text-center">
+            <!-- Logo Alanı: Buraya <img> etiketi ile logonuzu ekleyebilirsiniz. -->
+            <a href="#" class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+                42ler.com
+            </a>
+            <p class="text-lg text-gray-600 mt-2">Sağlıklı Yaşam Destek Ürünleri</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-4 text-sm font-semibold">
+                <a href="index.html" class="text-primary-600 hover:text-primary-700 transition-colors">Ana Sayfa</a>
+                <span class="text-gray-400">•</span>
+                <a href="hakkimizda.html" class="text-primary-600 hover:text-primary-700 transition-colors">Hakkımızda</a>
+                <span class="text-gray-400">•</span>
+                <a href="misyon-vizyon.html" class="text-primary-600 hover:text-primary-700 transition-colors">Misyon &amp; Vizyon</a>
+                <span class="text-gray-400">•</span>
+                <a href="kalite-politikamiz.html" class="text-primary-600 hover:text-primary-700 transition-colors">Kalite Politikamız</a>
+                <span class="text-gray-400">•</span>
+                <a href="iletisim.html" class="text-primary-600 hover:text-primary-700 transition-colors">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Main Content (Markalar) -->
+    <main class="container mx-auto px-4 py-16">
+        
+        <!-- 
+          Mobil Sıralama: flex-col ve order-{n}
+          PC Sıralama: md:grid md:grid-cols-3 ve md:order-none
+          
+          İstenen Mobil Sıralama:
+          1. Vitanimal Pet (order-1)
+          2. Vitanimal Broiler (order-2)
+          3. Vitwomen (order-3)
+
+          İstenen PC Sıralaması:
+          1. Vitwomen (md:order-1)
+          2. Vitanimal Pet (md:order-2)
+          3. Vitanimal Broiler (md:order-3)
+        -->
+        
+        <div class="flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-10">
+
+            <!-- Marka Kartı: Vitanimal Pet (Kedi) -->
+            <!-- Mobil: 1. sırada, PC: 2. sırada -->
+            <div class="order-1 md:order-2">
+                <a href="https://pet.vitanimal.tr" target="_blank" rel="noopener" class="block bg-white rounded-xl shadow-lg overflow-hidden h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-8" style="border-top-color:#3b82f6">
+                    <div class="h-48 flex items-center justify-center" style="background-color: rgba(59,130,246,0.08)">
+                        <img src="vitanimal pet.png" alt="Vitanimal Pet Logo" class="max-h-32 w-auto max-w-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x80/3B82F6/FFFFFF?text=Vitanimal+Pet';">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold brand-secondary-text">Vitanimal Pet</h2>
+                        <p class="text-gray-600 mt-2">Evcil dostlarınız için besin takviyeleri.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Marka Kartı: Vitanimal Broiler (Tavuk) -->
+            <!-- Mobil: 2. sırada, PC: 3. sırada -->
+            <div class="order-2 md:order-3">
+                <a href="https://broiler.vitanimal.tr" target="_blank" rel="noopener" class="block bg-white rounded-xl shadow-lg overflow-hidden h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-8" style="border-top-color:#eab308">
+                    <div class="h-48 flex items-center justify-center" style="background-color: rgba(234,179,8,0.12)">
+                        <img src="vitanimal broiler.png" alt="Vitanimal Broiler Logo" class="max-h-32 w-auto max-w-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x80/EAB308/FFFFFF?text=Vitanimal+Broiler';">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold" style="color:#eab308">Vitanimal Broiler</h2>
+                        <p class="text-gray-600 mt-2">Kanatlı hayvanlar için özel çözümler.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Marka Kartı: Vitwomen (Kadın) -->
+            <!-- Mobil: 3. sırada, PC: 1. sırada -->
+            <div class="order-3 md:order-1">
+                <a href="https://women.vitanimal.tr" target="_blank" rel="noopener" class="block bg-white rounded-xl shadow-lg overflow-hidden h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-t-8" style="border-top-color:#ec4899">
+                    <div class="h-48 flex items-center justify-center" style="background-color: rgba(236,72,153,0.08)">
+                        <img src="vitwomen.png" alt="Vitwomen Logo" class="max-h-32 w-auto max-w-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/150x80/EC4899/FFFFFF?text=Vitwomen';">
+                        </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold brand-primary-text">Vitwomen</h2>
+                        <p class="text-gray-600 mt-2">Kadın sağlığına özel destek ürünleri.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 3. Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Footer: Logo/Hakkında -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">42ler.com</h3>
+                    <p class="text-gray-400">
+                        Sağlıklı bir yaşam için doğadan gelen gücü, bilimsel yaklaşımlarla birleştiriyoruz.
+                    </p>
+                </div>
+
+                <!-- Footer: Kurumsal Linkler -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4 uppercase tracking-wider">Kurumsal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="hakkimizda.html" class="hover:text-white transition-colors">Hakkımızda</a></li>
+                        <li><a href="misyon-vizyon.html" class="hover:text-white transition-colors">Misyon &amp; Vizyon</a></li>
+                        <li><a href="kalite-politikamiz.html" class="hover:text-white transition-colors">Kalite Politikamız</a></li>
+                        <li><a href="iletisim.html" class="hover:text-white transition-colors">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer: Ürün Grupları Linkleri -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4 uppercase tracking-wider">Markalarımız</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://women.vitanimal.tr" class="hover:text-white transition-colors" target="_blank" rel="noopener">Vitwomen</a></li>
+                        <li><a href="https://pet.vitanimal.tr" class="hover:text-white transition-colors" target="_blank" rel="noopener">Vitanimal Pet</a></li>
+                        <li><a href="https://broiler.vitanimal.tr" class="hover:text-white transition-colors" target="_blank" rel="noopener">Vitanimal Broiler</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer: İletişim -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4 uppercase tracking-wider">İletişim</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Adres: Türkiye</li>
+                        <li>Telefon: +90 555 123 45 67</li>
+                        <li>Email: info@42ler.com</li>
+                        <li>Kariyer/CV: info@42ler.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright ve Tasarım Notu -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 42ler.com. Tüm hakları saklıdır.</p>
+                <p class="text-gray-500 text-sm mt-2">
+                    Tasarım: <a href="#" class="hover:text-white transition-colors">Niche Project Agency</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
