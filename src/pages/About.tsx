@@ -3,19 +3,19 @@ import { useLanguage } from "../i18n";
 
 const aboutCopy = {
   tr: {
-    eyebrow: "Levent Hoca'nın Broiler Vitanimal Hikayesi",
+    eyebrow: "Veteriner Hekim Levent Postalcıoğlu'nun Broiler Vitanimal Hikayesi",
     title: "Çeyrek Asırlık Tecrübe, Doğal Gelecek: Broiler Vitanimal",
     intro:
       "42ler çatısı altında yer alan Broiler Vitanimal'in temelleri, bir markadan öte, kanatlı sektörüne adanmış profesyonel bir yaşam öyküsüne dayanır.",
-    fieldTitle: 'Sahadan Gelen Bilgi: "Levent Hoca"',
+    fieldTitle: "Sahadan Gelen Bilgi: Veteriner Hekim Levent Postalcıoğlu",
     fieldParagraphs: [
-      "Hikayemiz, 1998 yılında kurucumuz Levent Postalcıoğlu'nun (sektördeki adıyla Levent Hoca) kanatlı dünyasına ilk adımını atmasıyla başladı.",
-      '1998-2007 yılları arasında çeşitli entegre tesislerde "Broiler Saha Hekimi" olarak görev yapan Postalcıoğlu, üretimin kalbinde, kümeslerin içinde yetişti.',
+      "Hikayemiz, 1998 yılında kurucumuz Veteriner Hekim Levent Postalcıoğlu'nun kanatlı dünyasına ilk adımını atmasıyla başladı.",
+      '1998-2007 yılları arasında çeşitli entegre tesislerde "Broiler Saha Hekimi" olarak görev yapan Postalcıoğlu, üretimin kalbinde sahada kendini geliştirdi.',
       "Bu süreç, teorik veterinerlik bilgisinin saha gerçekleriyle harmanlandığı, sektörün ihtiyaçlarının en saf haliyle analiz edildiği bir dönem oldu.",
     ],
     visionTitle: "Vizyoner Dönüşüm ve Kurumsallaşma",
     visionParagraph:
-      "2007-2010 yılları arasında satış ve pazarlama alanında edindiği stratejik bakış açısını, 2011 yılında kurduğu Veteriner Kanatlı Kliniği ile birleştiren Levent Hoca, bugün gururla temsil ettiğimiz şirketimizin temellerini bu dönemde attı.",
+      "2007-2010 yılları arasında satış ve pazarlama alanında edindiği stratejik bakış açısını, 2011 yılında kurduğu Veteriner Kanatlı Kliniği ile birleştiren Veteriner Hekim Levent Postalcıoğlu, bugün gururla temsil ettiğimiz şirketimizin temellerini bu dönemde attı.",
     visionLead:
       "Sakarya, Bolu ve çevre iller başta olmak üzere, broiler üretiminin kalbi sayılan bölgelerde;",
     visionBullets: [
@@ -35,20 +35,20 @@ const aboutCopy = {
     instituteCaption: "",
   },
   en: {
-    eyebrow: "Levent Hoca's Broiler Vitanimal Story",
+    eyebrow: "Veterinarian Levent Postalcıoğlu's Broiler Vitanimal Story",
     title:
       "A Quarter-Century of Experience, a Natural Future: Broiler Vitanimal",
     intro:
       "The foundations of Broiler Vitanimal under the 42ler umbrella are rooted in a professional life story devoted to the poultry sector, beyond a single brand.",
-    fieldTitle: 'Field Knowledge: "Levent Hoca"',
+    fieldTitle: "Field Knowledge: Veterinarian Levent Postalcıoğlu",
     fieldParagraphs: [
-      "Our story began in 1998 when our founder Levent Postalcıoğlu (known in the sector as Levent Hoca) took his first step into the poultry world.",
+      "Our story began in 1998 when our founder, Veterinarian Levent Postalcıoğlu, took his first step into the poultry world.",
       'Between 1998 and 2007, Postalcıoğlu worked as a "Broiler Field Veterinarian" at various integrated facilities and grew at the heart of production, inside the poultry houses.',
       "This period blended theoretical veterinary knowledge with field realities and allowed the sector’s needs to be analyzed in their purest form.",
     ],
     visionTitle: "Visionary Transformation and Institutionalization",
     visionParagraph:
-      "Combining the strategic perspective gained in sales and marketing between 2007-2010 with the Poultry Veterinary Clinic he founded in 2011, Levent Hoca laid the foundations of the company we proudly represent today.",
+      "Combining the strategic perspective gained in sales and marketing between 2007-2010 with the Poultry Veterinary Clinic he founded in 2011, Veterinarian Levent Postalcıoğlu laid the foundations of the company we proudly represent today.",
     visionLead:
       "In Sakarya, Bolu, and surrounding provinces—regions considered the heart of broiler production—we delivered;",
     visionBullets: [

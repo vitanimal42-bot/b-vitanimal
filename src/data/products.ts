@@ -155,7 +155,7 @@ For all farm animals and poultry (broilers, layers, breeder chicks, pullets, hen
         id: '2',
         name: 'EMW70 500 ML',
         category: 'Yem Katkısı',
-        description: 'Doğal solunum desteği.',
+          description: 'İştah açıcı ve doğal solunum desteği.',
         features: [
             'Ham Protein %0,00',
             'Ham Yağ %70,00',
@@ -196,7 +196,7 @@ Hayvan başına 1-2 damla ağızdan ya da;
         i18n: {
             en: {
                 name: 'EMW70 500 ML',
-                description: 'Natural respiratory support.',
+                  description: 'Appetite-stimulating and natural respiratory support.',
                 features: [
                     'Crude Protein 0.00%',
                     'Crude Fat 70.00%',

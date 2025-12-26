@@ -187,8 +187,8 @@ export default function Contact() {
                                     <span className="text-2xl mr-3">📧</span>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">{t('contact_details_email_label')}</h4>
-                                        <a href="mailto:info@vitanimal.com" className="text-primary-600 hover:text-primary-700 transition-colors">
-                                            info@vitanimal.com
+                                        <a href="mailto:broiler@vitanimal.tr" className="text-primary-600 hover:text-primary-700 transition-colors">
+                                            broiler@vitanimal.tr
                                         </a>
                                     </div>
                                 </div>
@@ -197,8 +197,18 @@ export default function Contact() {
                                     <span className="text-2xl mr-3">📱</span>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">{t('contact_details_phone_label')}</h4>
-                                        <a href="tel:+905551234567" className="text-primary-600 hover:text-primary-700 transition-colors">
-                                            +90 555 123 45 67
+                                        <a href="tel:+905317755754" className="text-primary-600 hover:text-primary-700 transition-colors">
+                                            +90 531 775 57 54
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start">
+                                    <span className="text-2xl mr-3">💬</span>
+                                    <div>
+                                        <h4 className="font-semibold text-gray-900">WhatsApp</h4>
+                                        <a href="https://wa.me/905317755754" className="text-primary-600 hover:text-primary-700 transition-colors">
+                                            +90 531 775 57 54
                                         </a>
                                     </div>
                                 </div>
@@ -254,11 +264,14 @@ export default function Contact() {
                             {t('contact_more_text')}
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <a href="mailto:info@vitanimal.com" className="btn-primary">
+                            <a href="mailto:broiler@vitanimal.tr" className="btn-primary">
                                 {t('contact_more_email')}
                             </a>
-                            <a href="tel:+905551234567" className="btn-secondary">
+                            <a href="tel:+905317755754" className="btn-secondary">
                                 {t('contact_more_call')}
+                            </a>
+                            <a href="https://wa.me/905317755754" className="btn-secondary">
+                                {t('contact_more_whatsapp')}
                             </a>
                         </div>
                     </div>

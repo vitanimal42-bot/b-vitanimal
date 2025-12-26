@@ -35,6 +35,7 @@ type Translations = {
     catalog_info_text: string;
     cta_contact: string;
     product_card_cta: string;
+    product_badge_new: string;
     product_not_found: string;
     product_back_to_catalog: string;
     product_back: string;
@@ -77,6 +78,7 @@ type Translations = {
     contact_more_text: string;
     contact_more_email: string;
     contact_more_call: string;
+    contact_more_whatsapp: string;
     footer_tagline: string;
     footer_quick_links: string;
     footer_contact: string;
@@ -92,16 +94,16 @@ const translations: Record<Language, Translations> = {
         nav_contact: 'İletişim',
         language_tr: 'Türkçe',
         language_en: 'İngilizce',
-        home_hero_tagline: 'Broiler Tavukçuluğu için Premium Beslenme Çözümleri',
-        home_hero_subtitle: 'Yüksek kaliteli yem ürünlerimizle tavuklarınızın sağlıklı büyümesini ve optimal performansını destekliyoruz',
+        home_hero_tagline: 'Broiler Tavukçuluğu için Premium Yem Katkı Çözümleri',
+        home_hero_subtitle: 'Yüksek kaliteli, doğal hammaddelerden üretilmiş yem katkı ürünlerimizle tavuklarınızın sağlıklı büyümesini ve optimal performansını destekliyoruz',
         home_hero_cta_products: 'Ürünleri İncele',
         home_hero_cta_more: 'Daha Fazla Bilgi',
         home_features_title: 'Neden Vitanimal?',
         home_features_subtitle: 'Broiler tavuklarınızın her büyüme aşaması için özel formüle edilmiş ürünler',
         home_feature_natural_title: 'Doğal İçerikler',
-        home_feature_natural_desc: 'Yüksek kaliteli, doğal hammaddelerden üretilmiş yemler',
+        home_feature_natural_desc: 'Yüksek kaliteli, doğal hammaddelerden üretilmiş yem katkı ürünleri',
         home_feature_growth_title: 'Hızlı Büyüme',
-        home_feature_growth_desc: 'Optimal enerji ve protein dengesi ile maksimum performans',
+        home_feature_growth_desc: 'Performansı destekleyen hedefli yem katkı formülasyonları',
         home_feature_immunity_title: 'Güçlü Bağışıklık',
         home_feature_immunity_desc: 'Vitamin ve mineraller ile desteklenmiş sağlıklı büyüme',
         home_featured_title: 'Öne Çıkan Ürünler',
@@ -118,6 +120,7 @@ const translations: Record<Language, Translations> = {
         catalog_info_text: 'Ürünlerimiz hakkında detaylı bilgi almak ve tavuklarınız için en uygun beslenme programını oluşturmak için bizimle iletişime geçin',
         cta_contact: 'İletişime Geç',
         product_card_cta: 'Detaylı Bilgi',
+        product_badge_new: 'Yeni Ürün',
         product_not_found: 'Ürün Bulunamadı',
         product_back_to_catalog: 'Kataloga Dön',
         product_back: 'Geri Dön',
@@ -146,12 +149,12 @@ const translations: Record<Language, Translations> = {
         contact_form_success: 'Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.',
         contact_form_error: 'Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.',
         contact_company_title: 'Şirket Bilgileri',
-        contact_company_tagline: 'Premium Hayvan Besleme Çözümleri',
+        contact_company_tagline: 'Premium Yem Katkı Çözümleri',
         contact_details_title: 'İletişim Bilgileri',
         contact_details_email_label: 'E-posta',
         contact_details_phone_label: 'Telefon',
         contact_details_address_label: 'Adres',
-        contact_details_address_value: 'Türkiye',
+        contact_details_address_value: 'Karaosman Mahallesi Ulus Caddesi No:99 E/3 Adapazarı',
         contact_hours_title: 'Çalışma Saatleri',
         contact_hours_weekdays: 'Pazartesi - Cuma',
         contact_hours_saturday: 'Cumartesi',
@@ -160,7 +163,8 @@ const translations: Record<Language, Translations> = {
         contact_more_text: 'Broiler tavukçuluğu için en uygun beslenme programını oluşturmak ve ürünlerimiz hakkında detaylı bilgi almak için uzman ekibimizle iletişime geçin',
         contact_more_email: 'E-posta Gönder',
         contact_more_call: 'Hemen Ara',
-        footer_tagline: 'Broiler tavukçuluğu için premium beslenme çözümleri',
+        contact_more_whatsapp: "WhatsApp'tan Yaz",
+        footer_tagline: 'Broiler tavukçuluğu için premium yem katkı çözümleri',
         footer_quick_links: 'Hızlı Erişim',
         footer_contact: 'İletişim',
         footer_contact_text: 'Daha fazla bilgi için bizimle iletişime geçin.',
@@ -173,16 +177,16 @@ const translations: Record<Language, Translations> = {
         nav_contact: 'Contact',
         language_tr: 'Turkish',
         language_en: 'English',
-        home_hero_tagline: 'Premium Nutrition Solutions for Broiler Poultry',
-        home_hero_subtitle: 'We support healthy growth and optimal performance with our high-quality feed products',
+        home_hero_tagline: 'Premium Feed Additive Solutions for Broiler Poultry',
+        home_hero_subtitle: 'We support healthy growth and optimal performance with our high-quality feed additive products made from natural raw materials',
         home_hero_cta_products: 'View Products',
         home_hero_cta_more: 'Learn More',
         home_features_title: 'Why Vitanimal?',
         home_features_subtitle: 'Specially formulated products for every growth stage of your broilers',
         home_feature_natural_title: 'Natural Ingredients',
-        home_feature_natural_desc: 'Feeds produced from high-quality natural raw materials',
+        home_feature_natural_desc: 'Feed additive products produced from high-quality natural raw materials',
         home_feature_growth_title: 'Fast Growth',
-        home_feature_growth_desc: 'Maximum performance with optimal energy and protein balance',
+        home_feature_growth_desc: 'Targeted feed additive formulations that support performance',
         home_feature_immunity_title: 'Strong Immunity',
         home_feature_immunity_desc: 'Healthy growth supported with vitamins and minerals',
         home_featured_title: 'Featured Products',
@@ -199,6 +203,7 @@ const translations: Record<Language, Translations> = {
         catalog_info_text: 'Contact us to get detailed information about our products and to create the most suitable nutrition program for your chickens',
         cta_contact: 'Contact Us',
         product_card_cta: 'View Details',
+        product_badge_new: 'New Product',
         product_not_found: 'Product Not Found',
         product_back_to_catalog: 'Back to Catalog',
         product_back: 'Go Back',
@@ -227,12 +232,12 @@ const translations: Record<Language, Translations> = {
         contact_form_success: 'Your message has been sent successfully. We will get back to you shortly.',
         contact_form_error: 'Message could not be sent. Please try again later.',
         contact_company_title: 'Company Information',
-        contact_company_tagline: 'Premium Animal Nutrition Solutions',
+        contact_company_tagline: 'Premium Feed Additive Solutions',
         contact_details_title: 'Contact Details',
         contact_details_email_label: 'Email',
         contact_details_phone_label: 'Phone',
         contact_details_address_label: 'Address',
-        contact_details_address_value: 'Turkey',
+        contact_details_address_value: 'Karaosman Mahallesi Ulus Caddesi No:99 E/3 Adapazarı',
         contact_hours_title: 'Working Hours',
         contact_hours_weekdays: 'Monday - Friday',
         contact_hours_saturday: 'Saturday',
@@ -241,7 +246,8 @@ const translations: Record<Language, Translations> = {
         contact_more_text: 'Contact our expert team to create the most suitable nutrition program for broiler poultry and to get detailed information about our products',
         contact_more_email: 'Send Email',
         contact_more_call: 'Call Now',
-        footer_tagline: 'Premium nutrition solutions for broiler poultry',
+        contact_more_whatsapp: 'Chat on WhatsApp',
+        footer_tagline: 'Premium feed additive solutions for broiler poultry',
         footer_quick_links: 'Quick Links',
         footer_contact: 'Contact',
         footer_contact_text: 'Contact us for more information.',

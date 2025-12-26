@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { getCategoryLabel, getLocalizedProduct, type Product } from '../data/products';
+import { getLocalizedProduct, type Product } from '../data/products';
 import { useLanguage } from '../i18n';
 
 interface ProductCardProps {
@@ -11,7 +11,6 @@ interface ProductCardProps {
 export default function ProductCard({ product, index }: ProductCardProps) {
     const { language, t } = useLanguage();
     const localizedProduct = getLocalizedProduct(product, language);
-    const categoryLabel = getCategoryLabel(product.category, language);
 
     return (
         <motion.div
@@ -29,7 +28,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
                 />
                 <div className="absolute top-4 right-4">
                     <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-                        {categoryLabel}
+                        {t('product_badge_new')}
                     </span>
                 </div>
             </div>
@@ -38,7 +37,7 @@ export default function ProductCard({ product, index }: ProductCardProps) {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
                     {localizedProduct.name}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">
+                <p className="text-gray-600 mb-4 line-clamp-2 min-h-[3rem]">
                     {localizedProduct.description}
                 </p>
 

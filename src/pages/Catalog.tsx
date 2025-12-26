@@ -1,19 +1,10 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { getCategoryLabel, getCategories, products } from '../data/products';
+import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import { formatProductsCount, useLanguage } from '../i18n';
 
 export default function Catalog() {
-    const allCategoryKey = 'all';
-    const [selectedCategory, setSelectedCategory] = useState<string>(allCategoryKey);
-    const categories = getCategories();
     const { language, t } = useLanguage();
-
-    // Filter products based on selected category
-    const filteredProducts = selectedCategory === allCategoryKey
-        ? products
-        : products.filter(product => product.category === selectedCategory);
 
     return (
         <div className="py-12 bg-gray-50 min-h-screen">
@@ -32,37 +23,6 @@ export default function Catalog() {
                     </p>
                 </motion.div>
 
-                {/* Category Filter */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2 }}
-                    className="flex flex-wrap justify-center gap-4 mb-12"
-                >
-                    <button
-                        key={allCategoryKey}
-                        onClick={() => setSelectedCategory(allCategoryKey)}
-                        className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${allCategoryKey === selectedCategory
-                                ? 'bg-primary-600 text-white shadow-lg transform scale-105'
-                                : 'bg-white text-gray-700 hover:bg-primary-50 hover:text-primary-600 shadow'
-                            }`}
-                    >
-                        {t('catalog_all')}
-                    </button>
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => setSelectedCategory(category)}
-                            className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${category === selectedCategory
-                                    ? 'bg-primary-600 text-white shadow-lg transform scale-105'
-                                    : 'bg-white text-gray-700 hover:bg-primary-50 hover:text-primary-600 shadow'
-                                }`}
-                        >
-                            {getCategoryLabel(category, language)}
-                        </button>
-                    ))}
-                </motion.div>
-
                 {/* Products Count */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -70,20 +30,19 @@ export default function Catalog() {
                     className="text-center mb-8"
                 >
                     <p className="text-gray-600">
-                        {formatProductsCount(filteredProducts.length, language)}
-                        {selectedCategory !== allCategoryKey && ` - ${getCategoryLabel(selectedCategory, language)}`}
+                        {formatProductsCount(products.length, language)}
                     </p>
                 </motion.div>
 
                 {/* Products Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredProducts.map((product, index) => (
+                    {products.map((product, index) => (
                         <ProductCard key={product.id} product={product} index={index} />
                     ))}
                 </div>
 
                 {/* No products message */}
-                {filteredProducts.length === 0 && (
+                {products.length === 0 && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
